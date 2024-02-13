@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root{
+    --newWhite: white;
+    --ogBlac: black;
+    --gcol: rgb(44, 44, 44);
+    --gcol2: rgb(186, 186, 186);
+    --col3: rgb(11, 10, 10);
+}
+
+/* #contain{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+} */
+
+.eerr{
+    text-align: center;
+    color: red;
+}
+
+#err{
+    background-color: red;
+    height: 5px;
+    width: 5px;
+    /* border-radius: 50%; */
+    color: red;
+}
+
+#leadNav{
+    /* background: #000; */
+    background-color: var(--col3);
+    display: flex;
+    padding: 5px;
+    justify-content: start;
+}
+
+#display{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: black;
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+/* ::-webkit-scrollbar-track{
+    width: 0px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece{
+    display: none;
+} */
+
+.top{
+    background-color: var(--gcol);
+    color: var(--newWhite);
+    position: fixed;
+    width: 16.6%;
+    /* border-right: -2px solid var(--gcol2); */
+}
+
+.btn{
+    position: fixed;
+    left: 14rem;
+    background-color: rgba(240, 248, 255, 0);
+    color: var(--newWhite);
+}
+
+.btn:hover{
+    background-color: var(--gcol);
+}
+
+.fs{
+    color: var(--newWhite);
+    position: fixed;
+    left: 3%;
+}
+
+#renderedfile{
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.innTerminal{
+    background-color: rgb(37, 37, 38);
+    min-height: 10vh;
+    position: absolute;
+    width: 100%;
+    top: 78%;
+    transition: all 0.9s ease-in-out;
+    z-index: 45;
+}
+
+#activateTerminal{
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* #err{
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50%;
+} */
+
+#closeTerminal{
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    right: 1%;
+    /* background-color: rgb(20, 20, 20); */
+    height: 19px;
+    cursor: pointer;
+}
+
+#gTerminal{
+    width: 100%;
+    margin-top: 1.1rem;
+    /* background-color: color-mix(in hsl shorter hue, rgba(145, 255, 0, 0.287) 100%, rgb(255, 10, 10)  50%); */
+    background-color: rgb(22, 22, 22);
+    color: rgb(0, 255, 255);
+}
+
+#parent{
+    display: flex;
+    width: 100%;
+}
+
+#ogTerminal{
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    color: var(--newWhite);
+}
+
+.show-file{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: rgb(37, 37, 36);
+    text-align: center;
+    /* height: 1.4rem; */
+}
+
+.top-nav{
+    display: flex;
+    justify-content: start;
+}
+
+.nav-nav{
+    color: var(--newWhite);
+    background-color: rgb(37, 37, 36);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sideBar{
+    width: 20%;
+    position: static;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgb(27, 27, 27);
+    border-right: 1px solid var(--gcol2);
+}
+
+.file-out{
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+}
+
+#createdOne, #createdTwo, #createdThree, #createdFour{
+    background-color: rgb(34, 33, 33);
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid var(--gcol);
+    border-right: 1px solid var(--gcol);
+    border-bottom: none;
+    height: 20px;
+}
+
+#createdOne:hover{
+    background-color: var(--gcol);
+}
+#createdTwo:hover{
+    background-color: var(--gcol);
+}
+#createdThree:hover{
+    background-color:  var(--gcol);
+}
+#createdFour:hover{
+    background-color: var(--gcol);
+}
+
+[data-leave]{
+    color: var(--newWhite);
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
